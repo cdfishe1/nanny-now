@@ -1,0 +1,29 @@
+{
+  "name": "nanny-now",
+  "version": "1.0.0",
+  "description": "Nanny Now allows parents who need to find a nanny to connect with people who offer their nanny services",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdfishe1/nanny-now.git"
+  },
+  "keywords": [],
+  "author": "Charles Fisher, Natalie Finnegan, Diego Villareal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cdfishe1/nanny-now/issues"
+  },
+  "homepage": "https://github.com/cdfishe1/nanny-now#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.1",
+    "dotenv": "^8.2.0",
+    "express-handlebars": "^5.3.0",
+    "express-session": "^1.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.2"
+  }
+}

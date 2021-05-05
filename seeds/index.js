@@ -1,0 +1,1 @@
+//create seeds for the models of the app

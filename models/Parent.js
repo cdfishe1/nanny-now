@@ -29,7 +29,7 @@ Parent.init(
       allowNull: false,
     },
     nanny_id: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       references: {
         model: "nanny",
         key: "id",

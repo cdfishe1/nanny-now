@@ -23,6 +23,10 @@ Nanny.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    years_experience: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
   },
   {
     sequelize,

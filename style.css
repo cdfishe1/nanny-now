@@ -20,17 +20,6 @@ body {
   margin-top: 60px;
   margin-bottom: 40px;
 }
-/* Navigation toggler */
-.navbar-toggler {
-  color: #0a0a0a !important;
-  border: none !important;
-  outline: none !important;
-}
-/* Navigation toggler burger icon */
-.navbar-toggler .fa {
-  color: #111111;
-  font-size: 26px;
-}
 /* Navigation link hover when selecting */
 .nav-link:hover {
   font-weight: 600;
@@ -45,4 +34,5 @@ body {
   margin-top: 40px;
   padding-top: 150px;
   padding-bottom: 150px;
+  border-radius: 10px;
 }

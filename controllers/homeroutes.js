@@ -10,7 +10,7 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.get("/", async (req, res) => {
+router.get("/signup", async (req, res) => {
   try {
     // Pass serialized data and session flag into template
     res.render("signup");

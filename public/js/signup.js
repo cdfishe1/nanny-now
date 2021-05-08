@@ -7,8 +7,7 @@ const signupFormHandler = async (event) => {
   const location = document.querySelector("#newUserLocation").value.trim();
 
   if (username && email && password && location) {
-    
-    const response = await fetch("/api/parents", {
+    const response = await fetch("api/parents", {
       method: "POST",
       body: JSON.stringify({ username, email, password, location }),
       headers: { "Content-Type": "application/json" },

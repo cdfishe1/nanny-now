@@ -1,13 +1,16 @@
 const router = require('express').Router();
 const { Parent } = require('../../models');
 
-// CREATE new user
+// CREATE new parent
 router.post('/', async (req, res) => {
+  console.log(req);
   try {
     const dbParentData = await Parent.create({
       username: req.body.username,
+      email: req.body.email,
       password: req.body.password,
-      location: req.body.location
+      location: req.body.location,
+      
     });
 
     req.session.save(() => {

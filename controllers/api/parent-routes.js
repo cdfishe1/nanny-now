@@ -3,7 +3,7 @@ const { Parent } = require('../../models');
 
 // CREATE new parent
 router.post('/', async (req, res) => {
-  console.log(req);
+  
   try {
     const dbParentData = await Parent.create({
       username: req.body.username,

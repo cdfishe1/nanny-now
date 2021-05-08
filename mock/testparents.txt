@@ -1,0 +1,5 @@
+{
+	"username": "Charles",
+	"password": "nannyYeah234$",
+	"location": "Evanston"
+}

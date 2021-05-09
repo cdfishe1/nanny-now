@@ -28,7 +28,7 @@ body {
 }
 /* The container where the "Hi!" message goes */
 .container {
-  background-color: #e06666;
+  /* background-color: #e06666; */
   font-size: 100px;
   color: #ffffff;
   margin-top: 40px;
@@ -79,6 +79,13 @@ body {
   font-weight: 600;
   font-size: 1.1rem;
   color: #333;
+}
+
+.sign-up {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  font-family: "Poppins", sans-serif;
 }
 /* form background color */
 .form-control {

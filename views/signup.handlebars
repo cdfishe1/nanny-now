@@ -1,5 +1,5 @@
 <!-- Container was added with log in form -->
-<section class="container-fluid">
+{{!-- <section class="container-fluid">
     <section class="row justify-content-center">
         <section class="col-12 col-sm-6 col-md-3">
             <form class="form sign-up">
@@ -30,6 +30,73 @@
                 </fieldset>
             </form>
         </section>
+    </section>
+</section> --}}
+
+
+
+
+<section class="container-fluid">
+    <section class="row justify-content-center">
+        <section class="col-12 col-sm-6 col-md-3">
+            <form class="form sign-up">
+                <fieldset>
+                    <h2 class="title">Basic Info</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="newUser" placeholder="username">
+                        <label for="textInput" class="form-label"></label>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" id="newUserEmail" placeholder="email">
+                        <label for="newUserEmail" class="form-label"></label>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="newUserPass" placeholder="password">
+                        <label for="newUserPass" class="form-label"></label>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" id="newUserLocation" placeholder="location">
+                        <label for="newUserLocation" class="form-label"></label>
+                    </div>
+                  </fieldset>
+            </form>
+        </section>   
+        <section class="col-12 col-sm-6 col-md-3">
+            <form class="form sign-up">
+                <fieldset>
+                      <h2 class="title">Nanny Needs</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="newUser" placeholder="username">
+                        <label for="textInput" class="form-label"></label>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" id="newUserEmail" placeholder="email">
+                        <label for="newUserEmail" class="form-label"></label>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="newUserPass" placeholder="password">
+                        <label for="newUserPass" class="form-label"></label>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" id="newUserLocation" placeholder="location">
+                        <label for="newUserLocation" class="form-label"></label>
+                    </div>
+    
+                    <!-- Log in button -->
+                </fieldset>
+            </form>
+        </section>
+        <div class="row justify-content-center signUpRow">
+        <button id="profSingUp"><a type="submit" id="signUpBtn" href="api/parents/search" class="btn btn-block" style='width:25%'>Sign up</a></button>
+        </div>
     </section>
 </section>
 

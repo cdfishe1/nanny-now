@@ -26,20 +26,20 @@
                     </div>
                   </fieldset>
             
-        </section>   
-        <section class="col-12 col-sm-6 col-md-3">
+          
+        
             
-                <fieldset class="sign-up">
+                <fieldset>
                       <h2 class="title">Nanny Needs</h2>
                       
-                    <select class="form-select mb-2" aria-label="Default select example">
-                        <option selected id='nannyGender'><i class="fas fa-venus-mars"></i>Gender</option>
+                    <select class="form-select mb-2" aria-label="Default select example" id='nannyGender'>
+                        <option selected><i class="fas fa-venus-mars"></i>Gender</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                         <option value="non-binary">Non-Binary</option>
                         </select>
-                    <select class='form-select mb-2' aria-label="Default select example">
-                        <option selected id='nannyLanguage'><i class="fas fa-venus-mars"></i>Language if not English</option>
+                    <select class='form-select mb-2' aria-label="Default select example" id='nannyLanguage'>
+                        <option selected><i class="fas fa-venus-mars"></i>Language if not English</option>
                         <option value="Afrikaans">Afrikaans</option>
                         <option value="Albanian">Albanian</option>
                         <option value="Arabic">Arabic</option>
@@ -113,8 +113,8 @@
                         <option value="Welsh">Welsh</option>
                         <option value="Xhosa">Xhosa</option>
                         </select>
-                    <select class="form-select mb-2" aria-label="Default select example mb-1">
-                        <option selected id='nannyEducation'><i class="fas fa-venus-mars"></i>Education Level</option>
+                    <select class="form-select mb-2" aria-label="Default select example mb-1" id='nannyEducation'>
+                        <option selected><i class="fas fa-venus-mars"></i>Education Level</option>
                         <option value="high-school">High School</option>
                         <option value="associates">Associates</option>
                         <option value="bachelors">Bachelors</option>
@@ -127,15 +127,15 @@
                     </div>
     
                     <!-- Log in button -->
-                    <div class="row justify-content-center signUpRow">
+                    {{!-- <div class="row justify-content-center signUpRow">
                 <button id="profSingUp"><a type="submit" id="signUpBtn" class="btn btn-block">Sign up</a></button>
-                </div>
+                </div> --}}
                 </fieldset>
-                
+                <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </section>
         
     </section>
 </section>
 
-<script src="./js/signup.js"></script>
+<script src="./js/signup-redo.js"></script>

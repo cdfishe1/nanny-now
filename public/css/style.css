@@ -1,6 +1,7 @@
 /* The background is lightgray */
 body {
   margin: 0;
+  margin-bottom: 75px;
   padding: 0;
   background: #f3f3f3ff;
 }
@@ -26,15 +27,24 @@ body {
   border-bottom: 1px solid #e06666;
   margin-bottom: -1px;
 }
-/* The container where the "Hi!" message goes */
-.container {
-  /* background-color: #e06666; */
-  font-size: 100px;
-  color: #ffffff;
-  margin-top: 40px;
-  padding-top: 150px;
-  padding-bottom: 150px;
+
+.landingPageBody {
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.homepageWrapper {
+  font-size: 20pt;
+  color: #3d5a80;
+  background-color: #fcd5ce;
   border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+#homeImage {
+  border-radius: 10px;
+  box-shadow: 10px 5px;
 }
 
 /* PASTED INFO */
@@ -109,4 +119,12 @@ body {
 /* Log in button hover */
 .btn:hover {
   color: #e14949ff;
+}
+
+.footer {
+  background-color: #e06666;
+}
+
+.footerText {
+  color: white;
 }

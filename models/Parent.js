@@ -36,6 +36,22 @@ Parent.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    years_experience: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    education: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    languages: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    gender: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     nanny_id: {
       type: DataTypes.INTEGER,
       references: {

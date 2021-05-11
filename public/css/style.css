@@ -121,6 +121,29 @@ body {
   color: #e14949ff;
 }
 
+#signUpBtn {
+  padding-top: 12px;
+}
+
+.searchBtn {
+  border-radius: 15px;
+  margin-left: -30px;
+  z-index: +1;
+  width: 50px;
+}
+#searchNanny {
+  border-radius: 15px;
+  border-color: black;
+}
+
+#searchText {
+  font-family: "Poppins", sans-serif;
+}
+
+#profSingUp {
+  border-style: none;
+}
+
 .footer {
   background-color: #e06666;
 }

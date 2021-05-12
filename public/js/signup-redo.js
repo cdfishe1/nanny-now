@@ -18,7 +18,7 @@ const signupRedoFormHandler = async (event) => {
       });
   
       if (response.ok) {
-        document.location.replace("/");
+        document.location.replace("/search");
       } else {
         alert("Failed to sign up.");
       }

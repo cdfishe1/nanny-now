@@ -1,5 +1,16 @@
-<h1>TEST</h1>
-{{log allNanny}}
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-6">
+          <h2 id="searchText" style="text-align: center;">Find Nannies In Your Area:</h2>
+          <hr>
+        <div class="input-group input-group-lg searchField">
+        <input type="text" class="form-control" style="color:black" id="searchNanny" aria-label="citySearch" placeholder="enter your city" aria-describedby="inputGroup-sizing-lg">
+        <button type="button" class="searchBtn"><a href="/api/nannies/"><i class="fas fa-search"></i></a></button>
+        </div> 
+    </div>   
+</div>
+<br>
+<hr>
 {{#each allNanny as |nanny|}}
 {{> nanny-details}}
 {{/each}}

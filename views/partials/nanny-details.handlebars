@@ -1,4 +1,4 @@
-<section class="container">
+{{!-- <section class="container">
   <div class="card">
     <div class="card-header">
       <h3 id="postTitle">{{username}}</h3>
@@ -13,4 +13,65 @@
       </blockquote>
     </div>
   </div>
-</section>
+</section> --}}
+
+<div class="row">
+  <div class="col-12">
+    <div class="card card-margin">
+      <div class="card-body">
+        <div class="row search-body">
+          <div class="col-lg-12">
+            <div class="search-result">
+              <div class="result-header">
+                <div class="result-body">
+                  <div class="table-responsive">
+                    <table class="table class-1">
+                      <tbody>
+                        <tr>
+                          {{! <td>
+                                  <div class="class-1-job-emp-img">
+                                  <img src="https://cdn.stocksnap.io/img-thumbs/960w/blonde-hair_JJOD797HPT.jpg"  alt="Company" />
+                                 </div>
+                                </td> }}
+                          <td>
+                            <div class="class-1-name-skills">
+                              <p>Name: {{username}}</p>
+                              <p class="m-0 languages">Languages:
+                                {{languages}}</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="class-1-availability-info">
+                              <p class="type m-0">{{gender}}</p>
+                              <p class="text-muted m-0 location">Location:
+                                {{location}}</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="class-1-job-salary">Experience:
+                              {{years_experience}}
+                              year(s)</div>
+                          </td>
+
+                          <td>
+                            <div class="class-1-job-category bg-soft-base">
+                              <span>Education Level: {{education}}</span>
+                            </div>
+                          </td>
+                        </tr>
+
+                      </tbody>
+
+                    </table>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

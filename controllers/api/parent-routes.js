@@ -10,10 +10,10 @@ router.post("/", async (req, res) => {
       email: req.body.email,
       password: req.body.password,
       location: req.body.location,
-      // gender: req.body.gender,
-      // languages: req.body.language,
-      // education: req.body.education,
-      // years_experience: req.body.experience
+      gender: req.body.gender,
+      languages: req.body.language,
+      education: req.body.education,
+      years_experience: req.body.experience
     });
 
     req.session.save(() => {

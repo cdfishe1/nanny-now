@@ -61,7 +61,7 @@ router.post("/login", async (req, res) => {
   }
 });
 
-//search after sign up
+//get search bar after sign up
 router.get("/search", async (req, res) => {
   try {
     // Pass serialized data and session flag into template

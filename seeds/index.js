@@ -9,9 +9,10 @@ const seedAll = async () => {
   await sequelize.sync({ force: true });
   console.log("\n----- DATABASE SYNCED -----\n");
   await seedParent();
-  console.log("\n----- PARENTS SEEDED -----\n");
 
+  console.log("\n----- PARENTS SEEDED -----\n");
   await seedNanny();
+
   console.log("\n----- NANNY SEEDED -----\n");
 
   process.exit(0);

@@ -10,6 +10,10 @@ router.post("/", async (req, res) => {
       email: req.body.email,
       password: req.body.password,
       location: req.body.location,
+      gender: req.body.gender,
+      languages: req.body.language,
+      education: req.body.education,
+      years_experience: req.body.experience
     });
 
     req.session.save(() => {
@@ -61,7 +65,7 @@ router.post("/login", async (req, res) => {
   }
 });
 
-//search after sign up
+//get search bar after sign up
 router.get("/search", async (req, res) => {
   try {
     // Pass serialized data and session flag into template

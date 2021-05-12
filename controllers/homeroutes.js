@@ -19,6 +19,15 @@ router.get("/signup", async (req, res) => {
   }
 });
 
+router.get("/signup-redo", async (req, res) => {
+  try {
+    // Pass serialized data and session flag into template
+    res.render("signup-redo");
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 router.get("/login", async (req, res) => {
   try {
     // Pass serialized data and session flag into template
@@ -28,10 +37,12 @@ router.get("/login", async (req, res) => {
   }
 });
 
-router.get("/about", async (req, res) => {
+
+//get search bar after sign up
+router.get("/search", async (req, res) => {
   try {
     // Pass serialized data and session flag into template
-    res.render("about");
+    res.render("search");
   } catch (err) {
     res.status(500).json(err);
   }

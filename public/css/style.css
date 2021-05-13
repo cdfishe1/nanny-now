@@ -136,6 +136,10 @@ body {
   color: black;
 }
 
+#nannyImage {
+  object-fit: cover;
+}
+
 #searchText {
   font-family: "Poppins", sans-serif;
 }

@@ -46,12 +46,24 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/about">About us</a>
                         </li>
-                        <li class="nav-item"></li>
-                        <a class="nav-link" href="/login">Login</a>
+                         <li class="nav-item">
+                            <a class="nav-link" href="/contact">Contact us</a>
+                        </li>
+                        {{#if loggedIn}}
+                       
+                      
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Logout</a>
+                        </li>
+                        {{/if}}
+                        {{#unless loggedIn}}
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">Login</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/signup">Signup</a>
                         </li>
+                        {{/unless}}
                 </div>
             </div>
         </nav>

@@ -13,7 +13,7 @@ router.post("/", async (req, res) => {
       gender: req.body.gender,
       languages: req.body.language,
       education: req.body.education,
-      years_experience: req.body.experience
+      years_experience: req.body.experience,
     });
 
     req.session.save(() => {
@@ -54,6 +54,7 @@ router.post("/login", async (req, res) => {
 
     req.session.save(() => {
       req.session.loggedIn = true;
+      console.log("line57", req.session.loggedIn);
 
       res
         .status(200)

@@ -4,7 +4,7 @@ const signupRedoFormHandler = async (event) => {
   const username = document.querySelector("#newUser").value.trim();
   const email = document.querySelector("#newUserEmail").value.trim();
   const password = document.querySelector("#newUserPass").value.trim();
-  const location = document.querySelector("#newUserLocation").value.trim();
+  const location = document.querySelector("#newUserLocation").value.trim().toLowerCase();
   const gender = document.querySelector("#nannyGender").value.trim();
   const language = document.querySelector("#nannyLanguage").value.trim();
   const education = document.querySelector("#nannyEducation").value.trim();

@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const { Nanny } = require("../../models");
+const { sequelize } = require("../../models/Nanny");
 
 // search for nannies
 router.get("/:location", async (req, res) => {
@@ -9,6 +10,7 @@ router.get("/:location", async (req, res) => {
       where: {
         location: req.params.location,
       },
+      order: [["years_experience", "asc"]],
     });
     const allNanny = dbNannyData.map((nanny) => nanny.get({ plain: true }));
     res.render("nanny", { allNanny });

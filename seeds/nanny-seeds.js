@@ -8,7 +8,8 @@ const nannyData = [
     years_experience: 2,
     education: "highschool",
     languages: "english",
-    gender: "f",
+    gender: "female",
+    filename: "dmitry-zmiy-rD01mlJ5WUM-unsplash.jpg",
   },
   {
     username: "ashley",
@@ -17,7 +18,8 @@ const nannyData = [
     years_experience: 5,
     education: "bachelors",
     languages: "english, spanish",
-    gender: "f",
+    gender: "female",
+    filename: "eric-boggs-pMGMHcNStuc-unsplash.jpg",
   },
   {
     username: "jaden",
@@ -26,7 +28,8 @@ const nannyData = [
     years_experience: 4,
     education: "masters",
     languages: "english",
-    gender: "f",
+    gender: "female",
+    filename: "joe-gardner-N5GCRjEMboQ-unsplash.jpg",
   },
   {
     username: "john",
@@ -35,7 +38,8 @@ const nannyData = [
     years_experience: 6,
     education: "masters",
     languages: "english, spanish",
-    gender: "m",
+    gender: "male",
+    filename: "brock-wegner-Ealw1_4nzrE-unsplash.jpg",
   },
   {
     username: "mary",
@@ -44,7 +48,8 @@ const nannyData = [
     years_experience: 3,
     education: "highschool",
     languages: "english",
-    gender: "f",
+    gender: "female",
+    filename: "levi-meir-clancy-J2Yi0eeWLX0-unsplash.jpg",
   },
   {
     username: "anthony",
@@ -53,7 +58,8 @@ const nannyData = [
     years_experience: 1,
     education: "highschool",
     languages: "english",
-    gender: "m",
+    gender: "male",
+    filename: "jesse-k-_19yzFou2Jg-unsplash.jpg",
   },
   {
     username: "vincent",
@@ -62,7 +68,8 @@ const nannyData = [
     years_experience: 4,
     education: "bachelors",
     languages: "english,spanish",
-    gender: "m",
+    gender: "male",
+    filename: "joanna-nix-walkup-I45gK7ZU5ss-unsplash.jpg",
   },
   {
     username: "amanda",
@@ -71,7 +78,8 @@ const nannyData = [
     years_experience: 10,
     education: "associates",
     languages: "english",
-    gender: "f",
+    gender: "female",
+    filename: "omar-lopez-_7kr8IMASTQ-unsplash.jpg",
   },
   {
     username: "oliver",
@@ -80,7 +88,8 @@ const nannyData = [
     years_experience: 8,
     education: "associates",
     languages: "english",
-    gender: "m",
+    gender: "male",
+    filename: "kashod-sullivan-vDP61BhOjlQ-unsplash.jpg",
   },
   {
     username: "derek",
@@ -89,7 +98,8 @@ const nannyData = [
     years_experience: 3,
     education: "associates",
     languages: "english",
-    gender: "m",
+    gender: "male",
+    filename: "pexels-hasibullah-zhowandai-819530.jpg",
   },
   {
     username: "kelsey",
@@ -98,7 +108,8 @@ const nannyData = [
     years_experience: 4,
     education: "masters",
     languages: "english",
-    gender: "f",
+    gender: "female",
+    filename: "stefan-stefancik-QXevDflbl8A-unsplash.jpg",
   },
   {
     username: "nathan",
@@ -107,7 +118,8 @@ const nannyData = [
     years_experience: 6,
     education: "bachelors",
     languages: "english",
-    gender: "m",
+    gender: "male",
+    filename: "roman-shilin-_6whfYYGUWE-unsplash.jpg",
   },
 ];
 

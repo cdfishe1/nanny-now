@@ -42,7 +42,7 @@ router.get("/login", async (req, res) => {
 //get search bar after sign up
 router.get("/search", async (req, res) => {
   if (!req.session.loggedIn) {
-    res.redirect("/login", { loggedIn: req.session.loggedIn });
+    res.redirect("/login");
     return;
   }
   try {

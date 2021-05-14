@@ -7,7 +7,7 @@
 Nanny Now allows parents who need to find a nanny to connect with people who offer their nanny services.
 
 ## Created by
-* [Natalie Finnegan](https://github.com/cdfishe1)
+* [Natalie Finnegan](https://github.com/nfinnegan)
 * [Charles Fisher](https://github.com/cdfishe1)
 * [Diego Villareal](https://github.com/diego773)
 
@@ -101,6 +101,12 @@ We used Nodemailer in order to construct our email contact form.
 * More robust searching with the ability to narrow searches by criteria such as languages, years of experience, etc.
 * Text messaging between parents and nannies
 * Development of an internal messaging system so that emails could be eliminated.
+* Integrate a payment system (Stripe or PayPal)
+* Adding Terms and Conditions
+* Conducting actual background checks before a Nanny is able to sign up and be booked for hire
+* Rate and review for families and nannies
+* See current bookings or nannies you've used in the past
+* Favorite/bookmark nannies while you are searching through results
 
 ## Special Thanks
 
@@ -109,12 +115,12 @@ We used Nodemailer in order to construct our email contact form.
 
 ## License
 
-Copyright (c) Natalie Finnegan, Charles Fisher, Diego Villareal. All rights reserved.<br>
+Copyright (c) Natalie Finnegan, Charles Fisher, Diego Villarreal. All rights reserved.<br>
 Please be kind and change content if you wish to use this code.
 
 <details><summary>Licensed under the MIT License</summary>
 
-Copyright (c) 2021 - present | Charles Fisher, Javiann Marerro, Thomas Schmidt
+Copyright (c) 2021 - present | Charles Fisher, Natalie Finnegan, Diego Villarreal
 
 <blockquote>
 Permission is hereby granted, free of charge, to any person obtaining a copy

@@ -160,13 +160,90 @@ body {
   border-style: none;
 }
 
-/* .footer {
-  background-color: #e06666;
+/* Contact Us */
+.contact-us {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
 }
 
-.footerText {
-  color: white;
-} */
+/* input form */
+.form-control {
+  background-color: #f0f0f0;
+  margin: 10px 0;
+  grid-template-columns: 15% 85%;
+  padding: 0.4rem;
+}
+
+/* title for each small form input */
+.form-label {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  color: rgb(73, 71, 71);
+  font-weight: 600;
+}
+
+/* input text  */
+.col-md-6 input {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* comment input text */
+.mb-3 textarea {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* search container  */
+.col-6 {
+  background: white;
+  border-radius: 10px;
+  /* padding: 25px; */
+  font-family: "Poppins", sans-serif;
+}
+/* search city small box */
+.col-6 input {
+  font-weight: 600px;
+  color: #f3f3f3;
+  color: #333;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+/* search button */
+.searchBtn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: white;
+  margin: 10px 0;
+}
+
+/* search button icon */
+.fa-search {
+  color: #999999;
+}
+
+/* See or Project */
+.footer-text {
+  color: #999999 !important;
+  position: relative;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  left: 2%;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  line-height: 60px;
+}
+
+.footer-text :hover {
+  color: none;
+}
 
 /* footer github icon */
 .github-icon ul {
@@ -190,7 +267,7 @@ body {
 }
 
 .github-icon ul li .fa:hover {
-  color: #fff;
+  color: none;
 }
 
 .github-icon ul li a {
@@ -224,50 +301,6 @@ body {
   margin: 10px 0;
   font-family: "Poppins", sans-serif;
 }
-
-/* .form-select .high-school {
-  background: none;
-  outline: none;
-  border: none;
-  line-height: 1;
-  font-weight: 600;
-  font-size: 1.1rem;
-  max-width: 200px;
-  font-size: 1.1rem;
-}
-
-.form-select .associates {
-  background: none;
-  outline: none;
-  border: none;
-  line-height: 1;
-  font-weight: 600;
-  font-size: 1.1rem;
-  max-width: 200px;
-  font-size: 1.1rem;
-}
-
-.form-select .bachelors {
-  background: none;
-  outline: none;
-  border: none;
-  line-height: 1;
-  font-weight: 600;
-  font-size: 1.1rem;
-  max-width: 200px;
-  font-size: 1.1rem;
-}
-
-.form-select .post-grad {
-  background: none;
-  outline: none;
-  border: none;
-  line-height: 1;
-  font-weight: 600;
-  font-size: 1.1rem;
-  max-width: 200px;
-  font-size: 1.1rem;
-} */
 
 @media screen and (max-width: 1000px) {
   .navbar-nav a {

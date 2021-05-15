@@ -101,6 +101,7 @@ We used Nodemailer in order to construct our email contact form.
 - Text messaging between parents and nannies
 - Development of an internal messaging system so that emails could be eliminated.
 - Integrate a payment system (Stripe or PayPal)
+- Integrate Cryptocurrency payment
 - Adding Terms and Conditions
 - Conducting actual background checks before a Nanny is able to sign up and be booked for hire
 - Rate and review for families and nannies

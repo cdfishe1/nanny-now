@@ -64,7 +64,7 @@ const nannyData = [
   {
     username: "vincent",
     password: "password6",
-    location: "chicago",
+    location: "denver",
     years_experience: 4,
     education: "bachelors",
     languages: "english,spanish",
@@ -74,7 +74,7 @@ const nannyData = [
   {
     username: "amanda",
     password: "password7",
-    location: "chicago",
+    location: "denver",
     years_experience: 10,
     education: "associates",
     languages: "english",
@@ -84,7 +84,7 @@ const nannyData = [
   {
     username: "oliver",
     password: "password8",
-    location: "chicago",
+    location: "denver",
     years_experience: 8,
     education: "associates",
     languages: "english",
@@ -94,7 +94,7 @@ const nannyData = [
   {
     username: "derek",
     password: "password9",
-    location: "chicago",
+    location: "denver",
     years_experience: 3,
     education: "associates",
     languages: "english",
@@ -104,7 +104,7 @@ const nannyData = [
   {
     username: "kelsey",
     password: "password10",
-    location: "chicago",
+    location: "denver",
     years_experience: 4,
     education: "masters",
     languages: "english",
@@ -114,7 +114,7 @@ const nannyData = [
   {
     username: "nathan",
     password: "password11",
-    location: "chicago",
+    location: "denver",
     years_experience: 6,
     education: "bachelors",
     languages: "english",

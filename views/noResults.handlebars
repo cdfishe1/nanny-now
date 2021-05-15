@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-6 searchArea">
+        <div class="col-6">
           <h2 id="searchText" style="text-align: center;">Find Nannies In Your Area:</h2>
           <hr>
         <div class="input-group input-group-lg searchField">
@@ -11,15 +11,4 @@
 </div>
 <br>
 <hr>
-{{#each allNanny as |nanny|}}
-{{> nanny-details}}
-
-{{/each}}
-
-<script src="/js/search.js"></script>
-
-
-
-
-
-<script src="/js/share2.js"></script>
+<h1>No Nannies In Your Area! Please Check Back Later!</h1>

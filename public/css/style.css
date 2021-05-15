@@ -14,8 +14,7 @@ body {
   font-size: 100px;
 }
 /* This is where navigation bar the color changes */
-.navbar-nav a,
-#contactLink {
+.navbar-nav a {
   color: #999999 !important;
   font-size: 150%;
   margin: 0 25px;
@@ -23,15 +22,22 @@ body {
   margin-bottom: 40px;
 }
 /* Navigation link hover when selecting */
-.nav-link:hover,
-#contactLink {
+.nav-link:hover {
   font-weight: 600;
   border-bottom: 1px solid #e06666;
   margin-bottom: -1px;
 }
 
 #contactLink {
-  text-decoration: none;
+  color: #999999 !important;
+  font-size: 20pts;
+
+  margin: 15px 0px;
+  border-radius: 10px;
+}
+
+#contacted {
+  display: none;
 }
 
 .landingPageBody {

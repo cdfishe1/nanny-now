@@ -302,19 +302,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-@media screen and (max-width: 1000px) {
-  .navbar-nav a {
-    color: #999999 !important;
-    font-size: 150%;
-    margin: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .searchArea {
-    width: auto;
-  }
-}
-
 /* search results page */
 
 .class-1 {
@@ -540,6 +527,27 @@ body {
   select
   option {
   color: #3c4142;
+}
+
+/* keeps the image without dissapering */
+.class-1-job-emp-img {
+  background-repeat: repeat-x;
+  float: left;
+  height: 50px;
+  width: 175px;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar-nav a {
+    color: #999999 !important;
+    font-size: 150%;
+    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .searchArea {
+    width: auto;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {

@@ -10,9 +10,9 @@ router.get("/:location", async (req, res) => {
       where: {
         location: req.params.location,
       },
-      order: [["years_experience", "asc"]],
     });
     const allNanny = dbNannyData.map((nanny) => nanny.get({ plain: true }));
+    allNanny.sort((a, b) => b.years_experience - a.years_experience);
     res.render("nanny", { allNanny });
     console.log("All nannies:", allNanny);
   } catch (err) {
@@ -20,12 +20,6 @@ router.get("/:location", async (req, res) => {
   }
 });
 
-// router.get("/", async (req, res) => {
-//   try {
-//     res.render("nanny");
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
+
 
 module.exports = router;

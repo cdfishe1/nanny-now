@@ -1,24 +1,20 @@
-document.addEventListener("DOMContentLoaded", function shareInfo(event) {
-  console.log(event.target);
 
-  document.querySelector("#contactLink").addEventListener("click", () => {
-    let emptyDiv = document.querySelector("#contacted");
-    console.log(emptyDiv);
-    emptyDiv.style.display = "block";
+function shareInfo(event) {
+  console.log("NAme of whogot clciked ???", $(this).attr("name"));
+  console.log("we clicked!!!", event.target);
+  // let emptyDiv = document.querySelector("#" + $(this).attr("name"));
+  // console.log(emptyDiv);
+  // emptyDiv.style.display = "block";
 
-    console.log("ok");
-  });
-});
+  $("#" + $(this).attr("name")).show();
 
-// const shareInfo = (event) => {
-//   console.log(event.target);
-//   let emptyDiv = document.querySelector("#contacted");
-//   console.log(emptyDiv);
-//   emptyDiv.style.display = "block";
-
-//   console.log("ok");
-// };
+  console.log("ok");
+}
 
 // emptyDiv.onclick = shareInfo;
 
-// document.querySelector("#contactLink").addEventListener("click", shareInfo);
+//document.onclick = shareInfo;
+
+$(".contactLink").on("click", shareInfo);
+
+

@@ -1,6 +1,6 @@
 const router = require("express").Router();
-const nodemailer = require('nodemailer');
-require('dotenv').config();
+const nodemailer = require("nodemailer");
+require("dotenv").config();
 //const withAuth = require("../utils/auth");
 
 router.get("/", async (req, res) => {
@@ -53,7 +53,7 @@ router.get("/search", async (req, res) => {
   }
 });
 
-// get about us page
+// get contact us page
 router.get("/contact", async (req, res) => {
   try {
     res.render("contact");
@@ -62,8 +62,16 @@ router.get("/contact", async (req, res) => {
   }
 });
 
+//get about us page
+router.get("/about", async (req, res) => {
+  try {
+    res.render("about");
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
-router.post('/send', (req, res) => {
+router.post("/send", (req, res) => {
   const output = `
       <p>You have a new contact request</p>
       <h3>Contact Details</h3>
@@ -77,37 +85,37 @@ router.post('/send', (req, res) => {
       <p>${req.body.comments}</p>
     `;
 
-    const transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 587,
-      secure: false, // true for 465, false for other ports
-      auth: {
-        user: process.env.MAIL_USER, 
-        pass: process.env.MAIL_KEY, 
-      },
-      tls: {
-          rejectUnauthorized: false,
-      }
-    });
-  
-      const mailOptions = {
-          from: '"Node Mailer Contact" <nannynowproject@gmail.com>',
-          to: 'cdfishe1@yahoo.com',
-          replyTo: `${req.body.email}`,
-          subject: 'Feedback about Nanny Now',
-          text: `Hello World`,
-          html: output
-      };
-  
-      transporter.sendMail(mailOptions, function(error, info){
-      if (error) {
-          console.log(error);
-      } else {
-          console.log('Email sent: ' + info.response);
-          res.render('contact', {msg: 'Email has been sent.'});
-      }
-      });
-})
+  const transporter = nodemailer.createTransport({
+    host: "smtp.gmail.com",
+    port: 587,
+    secure: false, // true for 465, false for other ports
+    auth: {
+      user: process.env.MAIL_USER,
+      pass: process.env.MAIL_KEY,
+    },
+    tls: {
+      rejectUnauthorized: false,
+    },
+  });
+
+  const mailOptions = {
+    from: '"Node Mailer Contact" <nannynowproject@gmail.com>',
+    to: "cdfishe1@yahoo.com",
+    replyTo: `${req.body.email}`,
+    subject: "Feedback about Nanny Now",
+    text: `Hello World`,
+    html: output,
+  };
+
+  transporter.sendMail(mailOptions, function (error, info) {
+    if (error) {
+      console.log(error);
+    } else {
+      console.log("Email sent: " + info.response);
+      res.render("contact", { msg: "Email has been sent." });
+    }
+  });
+});
 // router.post('/send', (req, res) => {
 //   try {
 //     console.log(req.body)

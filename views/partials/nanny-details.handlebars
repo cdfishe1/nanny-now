@@ -1,77 +1,47 @@
-<div class="container">
-<div class="row">
-  <div class="col-12">
-    <div class="card card-margin d-flex">
-      <div class="card-body">
-        <div class="row search-body">
-          <div class="col-lg-12">
-            <div class="search-result">
-              <div class="result-header">
-                <div class="result-body">
-                  <div class="table-responsive">
-                    <table class="table class-1">
-                      <tbody>
-                        <tr>
-                          <td>
-                            <div class="class-1-job-emp-img">
-                              <img
-                                id="nannyImage"
-                                class="img-fluid"
-                                src="/assets/{{filename}}"
-                                alt="personalPhoto"
-                              />
-                            </div>
-                          </td>
-                          <td>
-                            <div class="class-1-name-skills">
-                              <p>Name: {{username}}</p>
-                              <p class="m-0 languages">Languages:
-                                {{languages}}</p>
-                            </div>
-                          </td>
-                          <td>
-                            <div class="class-1-availability-info">
-                              <p class="type m-0">{{gender}}</p>
-                              <p class="text-muted m-0 location">Location:
-                                {{location}}</p>
-                            </div>
-                          </td>
-                          <td>
-                            <div class="class-1-job-salary">Experience:
-                              {{years_experience}}
-                              year(s)</div>
-                          </td>
 
-                          <td>
-                            <div class="class-1-job-category bg-soft-base">
-                              <span>Education Level: {{education}}</span>
-                            </div>
-                            <br />
-
-                            <button name={{id}} class="contactLink">Share
-                              Contact Info!</button>
-                            <div class="contacted" id={{id}}>Successfully Shared
-                              Info!</div>
-                          </td>
-                        </tr>
-
-                      </tbody>
-
-                    </table>
-
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
+<table class="table class-1">
+  <tbody>
+    <tr>
+      <td>
+        <div class="class-1-job-emp-img">
+          <img
+            id="nannyImage"
+            class="img-fluid"
+            src="/assets/{{filename}}"
+            alt="personalPhoto"
+          />
         </div>
-      </div>
-    </div>
-  </div>
+      </td>
+      <td>
+        <div class="class-1-name-skills">
+          <p>Name: {{username}}</p>
+          <p class="m-0 languages">Languages:
+            {{languages}}</p>
+        </div>
+      </td>
+      <td>
+        <div class="class-1-availability-info">
+          <p class="type m-0">{{gender}}</p>
+          <p class="text-muted m-0 location">Location:
+            {{location}}</p>
+        </div>
+      </td>
+      <td>
+        <div class="class-1-job-salary">Experience:
+          {{years_experience}}
+          year(s)</div>
+      </td>
 
-</div>
+      <td>
+        <div class="class-1-job-category bg-soft-base">
+          <span>Education Level: {{education}}</span>
+        </div>
+        <br />
 
-</div>
+        <button name={{id}} class="contactLink">Share Contact Info!</button>
+        <div class="contacted" id={{id}}>Successfully Shared Info!</div>
+      </td>
+    </tr>
 
-</div>
+  </tbody>
+</table>

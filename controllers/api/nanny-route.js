@@ -6,20 +6,19 @@ const { sequelize } = require("../../models/Nanny");
 router.get("/:location", async (req, res) => {
   console.log("line 6", req.params.location);
   try {
-    const dbNannyData = await Nanny.findAll(req.params, {
+    const dbNannyData = await Nanny.findAll({
       where: {
         location: req.params.location,
       },
     });
+    console.log("LINE 15", req.params.location);
     const allNanny = dbNannyData.map((nanny) => nanny.get({ plain: true }));
     allNanny.sort((a, b) => b.years_experience - a.years_experience);
-    res.render("nanny", { allNanny });
-    console.log("All nannies:", allNanny);
+    res.render("nanny", { allNanny, loggedIn: req.session.loggedIn });
+    // console.log("All nannies:", allNanny);
   } catch (err) {
     res.status(500).json(err);
   }
 });
-
-
 
 module.exports = router;

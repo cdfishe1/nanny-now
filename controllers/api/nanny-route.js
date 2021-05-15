@@ -12,10 +12,15 @@ router.get("/:location", async (req, res) => {
       },
     })
     
-    console.log("LINE 15", req.params.location);
-    const allNanny = dbNannyData.map((nanny) => nanny.get({ plain: true }));
-    allNanny.sort((a, b) => b.years_experience - a.years_experience);
-    res.render("nanny", { allNanny, loggedIn: req.session.loggedIn });
+    if (dbNannyData.length > 1) {
+      const allNanny = dbNannyData.map((nanny) => nanny.get({ plain: true }));
+      allNanny.sort((a, b) => b.years_experience - a.years_experience);
+      res.render("nanny", { allNanny, loggedIn: req.session.loggedIn });
+    } else {
+      console.log('hi mom');
+      res.render("noResults")
+    }
+    
   } catch (err) {
     res.status(500).json({ msg: "City is not in our Database!" });
   }

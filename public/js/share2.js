@@ -1,3 +1,4 @@
+
 function shareInfo(event) {
   console.log("NAme of whogot clciked ???", $(this).attr("name"));
   console.log("we clicked!!!", event.target);
@@ -15,3 +16,5 @@ function shareInfo(event) {
 //document.onclick = shareInfo;
 
 $(".contactLink").on("click", shareInfo);
+
+

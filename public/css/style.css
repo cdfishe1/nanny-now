@@ -28,7 +28,7 @@ body {
   margin-bottom: -1px;
 }
 
-#contactLink {
+.contactLink {
   color: #999999 !important;
   font-size: 20pts;
 
@@ -36,7 +36,7 @@ body {
   border-radius: 10px;
 }
 
-#contacted {
+.contacted {
   display: none;
 }
 

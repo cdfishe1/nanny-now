@@ -15,7 +15,7 @@ router.post("/", async (req, res) => {
       education: req.body.education,
       years_experience: req.body.experience,
     });
-
+    //SAVES SESSION, USER IN LOGGED IN
     req.session.save(() => {
       req.session.loggedIn = true;
 
@@ -29,6 +29,7 @@ router.post("/", async (req, res) => {
 
 // Login
 router.post("/login", async (req, res) => {
+  //CHECKS THAT THERE IS A MATCHING USER NAME IN DB
   try {
     const dbParentData = await Parent.findOne({
       where: {
@@ -51,10 +52,9 @@ router.post("/login", async (req, res) => {
         .json({ message: "Incorrect email or password. Please try again!" });
       return;
     }
-
+    //SAVES SESSION, USER IN LOGGED IN
     req.session.save(() => {
       req.session.loggedIn = true;
-      console.log("line57", req.session.loggedIn);
 
       res
         .status(200)

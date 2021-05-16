@@ -116,12 +116,6 @@ router.post("/send", (req, res) => {
     }
   });
 });
-// router.post('/send', (req, res) => {
-//   try {
-//     console.log(req.body)
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// })
+
 
 module.exports = router;

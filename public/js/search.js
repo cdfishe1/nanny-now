@@ -1,3 +1,4 @@
+//FUNCTION TO MAKE REQUEST TO SEARCH DB FOR NANNIES IN DB THAT MATCH SEARCH LOCATION VALUE
 const searchHandler = async (event) => {
   event.preventDefault();
 
@@ -5,22 +6,10 @@ const searchHandler = async (event) => {
     .querySelector("#searchNanny")
     .value.trim()
     .toLowerCase();
-  console.log("test", searchLocation);
-  if (searchLocation) {
-  console.log('ABOUT ot change url!!!', searchLocation)
-    document.location.replace(`/api/nannies/${searchLocation}`);
-    // const response = await fetch(`/api/nannies/${searchLocation}`, {
-    //   method: "GET",
-    //   // body: JSON.stringify({ searchLocation }),
-    //   headers: { "Content-Type": "application/json" },
-    // });
 
-    // if (response.ok) {
-    //   document.location.replace(`/api/nannies/${searchLocation}`);
-    //   console.log("OK!");
-    // } else {
-    //   alert("Search Failed");
-    // }
+  if (searchLocation) {
+    //ROUTES TO NANNY ROUTES THAT USES A GET REQUEST TO RETRIEVE MATCHING INFORMATION
+    document.location.replace(`/api/nannies/${searchLocation}`);
   }
 };
 

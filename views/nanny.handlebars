@@ -1,3 +1,4 @@
+{{!-- RENDERS THE SEARCH BAR SO IT REMAINS AT THE TOP OF THE PAGE --}}
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-6 searchArea">
@@ -12,7 +13,7 @@
 <br>
 <hr>
 
-                   
+{{!--FOR EACH NANNY IN THE CITY THAT THE USER INPUT, IT WILL CREATE A TABLE DISPLAYING INFO FROM DATABASE  --}}
 {{#each allNanny as |nanny|}}
 <div class="container">
   <div class="row">

@@ -1,6 +1,6 @@
 const signupRedoFormHandler = async (event) => {
   event.preventDefault();
-
+//SAVING ALL VALUES FROM OUR INPUT/DROP DOWN FIELDS
   const username = document.querySelector("#newUser").value.trim();
   const email = document.querySelector("#newUserEmail").value.trim();
   const password = document.querySelector("#newUserPass").value.trim();
@@ -10,6 +10,8 @@ const signupRedoFormHandler = async (event) => {
   const education = document.querySelector("#nannyEducation").value.trim();
   const experience = document.querySelector("#nannyExp").value.trim();
 
+
+//IF A VALUE EXISTS FOR EACH INPUT/DROP DOWN, SEND REQUEST TO CREATE NEW USER
   if (
     username &&
     email &&
@@ -34,7 +36,7 @@ const signupRedoFormHandler = async (event) => {
       }),
       headers: { "Content-Type": "application/json" },
     });
-
+//REDIRECT TO SEARCH PAGE IF NEW USER CREATED SUCCESSFULLY
     if (response.ok) {
       document.location.replace("/search");
     } else {

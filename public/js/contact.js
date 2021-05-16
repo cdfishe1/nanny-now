@@ -1,3 +1,4 @@
+//DEPENDENCIES
 require('dotenv').config();
 const express = require("express");
 const nodemailer = require('nodemailer');
@@ -7,6 +8,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+//USING NODEMAILER SET UP TO GET VALUES FROM USER INPUT ON CONTACT US PAGE AND SEND INFORMATION TO NANNYNOWPROJECT@GMAIL
 app.post('/send', (req, res) => {
   console.log(req.body);
 })
@@ -19,12 +21,6 @@ const mailFormHandler = (event) => {
     const email = document.querySelector('#email').value.trim();
     const comments = document.querySelector('#comments').value.trim();
 
-    console.log(`
-    ${firstName}
-    ${lastName}
-    ${email}
-    ${comments}
-    `);
 
     const transporter = nodemailer.createTransport({
     service: 'gmail',

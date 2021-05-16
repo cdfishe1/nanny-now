@@ -152,8 +152,35 @@ body {
   object-fit: cover;
 }
 
-#searchText {
+#searchText,
+.aboutUs {
   font-family: "Poppins", sans-serif;
+}
+
+.aboutRow {
+  display: flex;
+  justify-content: center;
+}
+
+.images {
+  display: inline-flex;
+}
+
+.personalPhotos {
+  border-radius: 175px;
+  height: 75px;
+  margin: 20px;
+}
+.ourNames {
+  display: inline-flex;
+}
+
+.aboutWrapper {
+  width: auto;
+}
+.names {
+  padding: 5px;
+  margin-top: auto;
 }
 
 #profSingUp {
@@ -567,6 +594,13 @@ body {
   .col-lg-2 {
     flex: 0 0 16.66667%;
     max-width: 16.66667%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .images {
+    display: block;
+    text-align: center;
   }
 }
 

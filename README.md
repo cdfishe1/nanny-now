@@ -58,9 +58,11 @@ THEN an email is sent to Nanny Now with my comments
 
 ### Screencast on wide screen
 
-<img src="nannynow.gif">
+<img src="./public/assets/nannynow.gif">
 
 ### Screencast on mobile
+
+<img src="./public/assets/nanny-mobile.gif">
 
 ## Deployment
 

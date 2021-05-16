@@ -17,7 +17,7 @@ router.get("/:location", async (req, res) => {
       allNanny.sort((a, b) => b.years_experience - a.years_experience);
       res.render("nanny", { allNanny, loggedIn: req.session.loggedIn });
     } else {
-      res.render("noResults");
+      res.render("noResults", { loggedIn: req.session.loggedIn });
     }
   } catch (err) {
     res.status(500).json({ msg: "City is not in our Database!" });
